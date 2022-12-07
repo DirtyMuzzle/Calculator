@@ -3,6 +3,7 @@
 using namespace std;
 int main() {
 	int a, b,func;
+	cout << "Insert 2 numbers:" << endl;
 	cin >> a >> b;
 	cout << "List of functions:" << endl;
 	cout << "1.sum" << endl;
