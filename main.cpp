@@ -2,7 +2,7 @@
 using namespace std;
 int main()
 {
-   cout << "Nig...";
-   cout<< "vaskouscky moy best friend" ;
+ int a, b;
+	cin >> a >> b;
+   cout << sum(a, b) << endl;
 }
-c
