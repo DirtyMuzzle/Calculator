@@ -16,12 +16,28 @@ int leftShift(int a, int b) {
 int rightShift(int a, int b) {
 	return a >> b;
 }
-/*bool negation(bool a) {
-	return !a;
-}
+bool negation(bool a) {
+	if (a == true) {
+		return false;
+	}
+	else {
+		return true;
+	}
+	}
 bool conjunction(bool a, bool b) {
-	return a && b;
+	if (a == true && b == true) {
+		return true;
+	}
+	else {
+		return false;
+	}
+	
 }
 bool disjunction(bool a, bool b) {
-	return a || b;
-}*/
+	if (a == true || b == true) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
