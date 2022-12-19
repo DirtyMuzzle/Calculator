@@ -4,190 +4,190 @@
 #include "programmerfunc.h"
 #include "scientificfunc.h"
 using namespace std;
-string calculatortype() {
-	cout << "Welcome to our calculator!" << endl;
-	cout << endl << "Choose calculator type:" << endl;
-	cout << "1.Standart" << endl;
-	cout << "2.Programmer" << endl;
-	cout << "3.Scientific" << endl;
+std::string calculatortype() {
+	std::cout << "Welcome to our calculator!" << std::endl;
+	std::cout << std::endl << "Choose calculator type:" << std::endl;
+	std::cout << "1.Standart" << std::endl;
+	std::cout << "2.Programmer" << std::endl;
+	std::cout << "3.Scientific" << std::endl;
 	return "\n";
 }
-string standartlist() {
-	std::cout << endl << "List of functions:" << endl;
-	std::cout << "1.sum" << endl;
-	std::cout << "2.sub" << endl;
-	std::cout << "3.mult" << endl;
-	std::cout << "4.division" << endl;
-	std::cout << "5.mode" << endl;
-	std::cout << "6.UnaryPlus" << endl;
-	std::cout << "7.UnaryMinus" << endl;
-	std::cout << endl << "Choose function:";
+std::string standartlist() {
+	std::cout << endl << "List of functions:" << std::endl;
+	std::cout << "1.sum" << std::endl;
+	std::cout << "2.sub" << std::endl;
+	std::cout << "3.mult" << std::endl;
+	std::cout << "4.division" << std::endl;
+	std::cout << "5.mode" << std::endl;
+	std::cout << "6.UnaryPlus" << std::endl;
+	std::cout << "7.UnaryMinus" << std::endl;
+	std::cout << std::endl << "Choose function:";
 	return "\n";
 }
-string standartfunc(int func) {
+std::string standartfunc(int func) {
 	switch (func) {
 	case 1:
-		cout << endl << "Insert 2 numbers:" << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
 		int a, b;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		std::cout << sum(a, b) << endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << sum(a, b) << std::endl;
 		break;
 	case 2:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		std::cout << sub(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << sub(a, b) << std::endl;
 		break;
 	case 3:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		std::cout << mult(a, b) << endl;
+		std::cout << endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << mult(a, b) << std::endl;
 		break;
 	case 4:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		std::cout << division(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << division(a, b) << std::endl;
 		break;
 	case 5:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		std::cout << mode(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << mode(a, b) << std::endl;
 		break;
 	case 6:
-		cout << endl << "Insert 1 number:" << endl;
-		cin >> a;
-		cout << endl << "Result:" << endl;
-		std::cout << UnaryPlus(a) << endl;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << UnaryPlus(a) << std::endl;
 		break;
 	case 7:
-		cout << endl << "Insert 1 numbers:" << endl;
-		cin >> a;
-		cout << endl << "Result:" << endl;
-		std::cout << UnaryMinus(a) << endl;
+		std::cout << std::endl << "Insert 1 numbers:" << std::endl;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << UnaryMinus(a) << std::endl;
 		break;
 	default:
-		std::cout << endl << "Wrong function!!!" << endl;
+		std::cout << std::endl << "Wrong function!!!" << std::endl;
 	}
 	return "\n";
 }
-string programmerlist() {
-	cout << endl << "List of functions:" << endl;
-	cout << "1.bitwiseNot" << endl;
-	cout << "2.bitwiseAnd" << endl;
-	cout << "3.bitwiseOr" << endl;
-	cout << "4.bitwiseExclusiveOr" << endl;
-	cout << "5.leftShift" << endl;
-	cout << "6.rightShift" << endl;
-	cout << "7.negation(in development)" << endl;
-	cout << "8.conjunction(in development)" << endl;
-	cout << "9.disjunction(in development)" << endl;
+std::string programmerlist() {
+	std::cout << std::endl << "List of functions:" << std::endl;
+	std::cout << "1.bitwiseNot" << std::endl;
+	std::cout << "2.bitwiseAnd" << std::endl;
+	std::cout << "3.bitwiseOr" << std::endl;
+	std::cout << "4.bitwiseExclusiveOr" << std::endl;
+	std::cout << "5.leftShift" << std::endl;
+	std::cout << "6.rightShift" << std::endl;
+	std::cout << "7.negation(in development)" << std::endl;
+	std::cout << "8.conjunction(in development)" << std::endl;
+	std::cout << "9.disjunction(in development)" << std::endl;
 	return "\n";
 }
 string programmerfunc(int func) {
 	switch (func) {
 	case 1:
-		cout << endl << "Insert 1 number:" << endl;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a, b;
-		cin >> a;
-		cout << endl << "Result:" << endl;
-		cout << bitwiseNot(a) << endl;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << bitwiseNot(a) << std::endl;
 		break;
 	case 2:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		cout << bitwiseAnd(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << bitwiseAnd(a, b) << std::endl;
 		break;
 	case 3:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		cout << bitwiseOr(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << bitwiseOr(a, b) << std::endl;
 		break;
 	case 4:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		cout << bitwiseExclusiveOr(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << bitwiseExclusiveOr(a, b) << std::endl;
 		break;
 	case 5:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		cout << leftShift(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << leftShift(a, b) << std::endl;
 		break;
 	case 6:
-		cout << endl << "Insert 2 numbers:" << endl;
-		cin >> a >> b;
-		cout << endl << "Result:" << endl;
-		cout << rightShift(a, b) << endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> a >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << rightShift(a, b) << std::endl;
 		break;
 	default:
-		std::cout << endl << "Wrong function!!!" << endl;
+		std::cout << std::endl << "Wrong function!!!" << std::endl;
 	}
 	return "\n";
 }
-string scientificlist() {
-	cout << endl << "List of functions:" << endl;
-	cout << "1.AbsoluteValue" << endl;
-	cout << "2.SquareRoot" << endl;
-	cout << "3.ReciprocalFunction" << endl;
+std::string scientificlist() {
+	std::cout << std::endl << "List of functions:" << std::endl;
+	std::cout << "1.AbsoluteValue" << std::endl;
+	std::cout << "2.SquareRoot" << std::endl;
+	std::cout << "3.ReciprocalFunction" << std::endl;
 	return "\n";
 }
-string scientificfunc(int func) {
+std::string scientificfunc(int func) {
 	switch (func) {
 	case 1:
-		cout << endl << "Insert 1 number:" << endl;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
-		cin >> a;
-		cout << endl << "Result:" << endl;
-		cout << AbsoluteValue(a) << endl;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << AbsoluteValue(a) << std::endl;
 		break;
 	case 2:
-		cout << endl << "Insert 1 number:" << endl;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
-		cin >> b;
-		cout << endl << "Result:" << endl;
-		cout << SquareRoot(b) << endl;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
 		break;
 	case 3:
-		cout << endl << "Insert 1 number:" << endl;
-		cin >> b;
-		cout << endl << "Result:" << endl;
-		cout << ReciprocalFunction(b) << endl;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
 		break;
 	default:
-		std::cout << endl << "Wrong function!!!" << endl;
+		std::cout << endl << "Wrong function!!!" << std::endl;
 	}
 	return "\n";
 }
-string calculator() {
+std::string calculator() {
 	int calctype, func;
-	cout << calculatortype();
-	cin >> calctype;
+	std::cout << calculatortype();
+	std::cin >> calctype;
 	switch (calctype) {
 	case 1:
-		cout << standartlist();
-		cin >> func;
-		cout << standartfunc(func);
+		std::cout << standartlist();
+		std::cin >> func;
+		std::cout << standartfunc(func);
 		break;
 	case 2:
-		cout << programmerlist();
-		cin >> func;
-		cout << programmerfunc(func);
+		std::cout << programmerlist();
+		std::cin >> func;
+		std::cout << programmerfunc(func);
 		break;
 	case 3:
-		cout << scientificlist();
-		cin >> func;
-		cout << scientificfunc(func);
+		std::cout << scientificlist();
+		std:cin >> func;
+		std::cout << scientificfunc(func);
 		break;
 	default:
-		std::cout << "Wrong type!!!" << endl;
+		std::cout << "Wrong type!!!" << std::endl;
 	}
-	cout << "Thanks for using our calculator :)";
+	std::cout << "Thanks for using our calculator :)";
 	return "\n";
 }
