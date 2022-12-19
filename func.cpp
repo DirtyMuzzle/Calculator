@@ -64,7 +64,7 @@ std::string standartfunc(int func) {
 		std::cout << UnaryPlus(a) << std::endl;
 		break;
 	case 7:
-		std::cout << std::endl << "Insert 1 numbers:" << std::endl;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << UnaryMinus(a) << std::endl;
@@ -127,21 +127,21 @@ string programmerfunc(int func) {
 		std::cout << rightShift(a, b) << std::endl;
 		break;
 	case 7:
-		std::cout << std::endl << "Insert 0 or 1" << std::endl;
+		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
 		bool f;
 		std::cin >> f;
 		std::cout << std::endl << "Result :" << std::endl;
 		std::cout << negation(f) << std::endl;
 		break;
 	case 8:
-		std::cout << std::endl << "Insert 0 or 1" << std::endl;
+		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
 		bool f, m;
 		std::cin >> f >> m;
 		std::cout << std::endl << "Result :" << std::endl;
 		std::cout << conjunction(f, m) << std::endl;
 		break;
 	case 9:
-		std::cout << std::endl << "Insert 0 or 1" << std::endl;
+		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
 		bool f, m;
 		std::cin >> f >> m;
 		std::cout << std::endl << "Result :" << std::endl;
