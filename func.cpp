@@ -82,9 +82,9 @@ std::string programmerlist() {
 	std::cout << "4.bitwiseExclusiveOr" << std::endl;
 	std::cout << "5.leftShift" << std::endl;
 	std::cout << "6.rightShift" << std::endl;
-	std::cout << "7.negation(in development)" << std::endl;
-	std::cout << "8.conjunction(in development)" << std::endl;
-	std::cout << "9.disjunction(in development)" << std::endl;
+	std::cout << "7.negation" << std::endl;
+	std::cout << "8.conjunction" << std::endl;
+	std::cout << "9.disjunction" << std::endl;
 	return "\n";
 }
 string programmerfunc(int func) {
@@ -125,6 +125,27 @@ string programmerfunc(int func) {
 		std::cin >> a >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << rightShift(a, b) << std::endl;
+		break;
+	case 7:
+		std::cout << std::endl << "Insert 0 or 1" << std::endl;
+		bool f;
+		std::cin >> f;
+		std::cout << std::endl << "Result :" << std::endl;
+		std::cout << negation(f) << std::endl;
+		break;
+	case 8:
+		std::cout << std::endl << "Insert 0 or 1" << std::endl;
+		bool f, m;
+		std::cin >> f >> m;
+		std::cout << std::endl << "Result :" << std::endl;
+		std::cout << conjunction(f, m) << std::endl;
+		break;
+	case 9:
+		std::cout << std::endl << "Insert 0 or 1" << std::endl;
+		bool f, m;
+		std::cin >> f >> m;
+		std::cout << std::endl << "Result :" << std::endl;
+		std::cout << disjunction(f, m) << std::endl;
 		break;
 	default:
 		std::cout << std::endl << "Wrong function!!!" << std::endl;
