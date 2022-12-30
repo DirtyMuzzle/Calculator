@@ -6,7 +6,6 @@ int Factorial(int a);
 double AToThePowerOfB(double a, int m);
 double Square(double a);
 double TenToThePowerOfB(int b);
-double log(double a, double b);
 double ln(double a);
 /*double timeanddate();*/
 double sinus(double a);
