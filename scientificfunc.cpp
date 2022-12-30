@@ -57,11 +57,8 @@ double TenToThePowerOfB(int b) {
 		return z;
 	}
 }
-double log(double a, double b) {
-	return log(a, b);
-}
 double ln(double f) {
-	return ln(f);
+	return log(f);
 }
 double sinus(double a) {
 	return sin(a);
