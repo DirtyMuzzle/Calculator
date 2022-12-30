@@ -135,14 +135,13 @@ string programmerfunc(int func) {
 		break;
 	case 8:
 		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
-		bool f, m;
+		bool m;
 		std::cin >> f >> m;
 		std::cout << std::endl << "Result :" << std::endl;
 		std::cout << Conjunction(f, m) << std::endl;
 		break;
 	case 9:
 		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
-		bool f, m;
 		std::cin >> f >> m;
 		std::cout << std::endl << "Result :" << std::endl;
 		std::cout << Disjunction(f, m) << std::endl;
