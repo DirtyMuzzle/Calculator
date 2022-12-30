@@ -198,6 +198,126 @@ std::string scientificfunc(int func) {
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << ReciprocalFunction(b) << std::endl;
 		break;
+	case 4:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		int a;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << Factoril(a) << std::endl;
+		break;
+	case 5:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
+		break;
+	case 6:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
+		break;
+	case 7:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		int a;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << AbsoluteValue(a) << std::endl;
+		break;
+	case 8:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
+		break;
+	case 9:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
+		break;
+	case 10:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		int a;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << AbsoluteValue(a) << std::endl;
+		break;
+	case 11:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
+		break;
+	case 12:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
+		break;
+	case 13:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		int a;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << AbsoluteValue(a) << std::endl;
+		break;
+	case 14:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
+		break;
+	case 15:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
+		break;
+	case 16:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		int a;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << AbsoluteValue(a) << std::endl;
+		break;
+	case 17:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
+		break;
+	case 18:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
+		break;
+	case 19:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		int a;
+		std::cin >> a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << AbsoluteValue(a) << std::endl;
+		break;
+	case 20:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
+		std::cin >> b;
+		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << SquareRoot(b) << std::endl;
+		break;
+	case 21:
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		std::cin >> b;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << ReciprocalFunction(b) << std::endl;
+		break;
 	default:
 		std::cout << endl << "Wrong function!!!" << std::endl;
 	}
