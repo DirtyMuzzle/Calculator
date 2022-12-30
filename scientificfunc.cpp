@@ -25,10 +25,10 @@ int factorial(int a) {
 		return a * factorial(a - 1);
 	}
 }
-double square(double a) {
+double Square(double a) {
 	return a * a;
 }
-double degree(double a,int m) {
+double AToThePowerOfB(double a, int m) {
 	if (m == 0) {
 		return 0;
 	}
@@ -42,3 +42,52 @@ double degree(double a,int m) {
 		return a;
 	}
 }
+double TenToThePowerOfB(int b) {
+	if (b == 0) {
+		return 1;
+	}
+	if (b == 1) {
+		return 10;
+	}
+	else {
+		int z=10;
+		for (int i = 1; i < b; i++) {
+			z = z * z;
+		}
+		return z;
+	}
+}
+double log(double a, double b) {
+	return log(a, b);
+}
+double ln(double f) {
+	return ln(f);
+}
+double sinus(double a) {
+	return sin(a);
+}
+double Tg(double a) {
+	return tan(a);
+}
+double Ctg(double a) {
+	return ReciprocalFunction(tan(a));
+}
+double Asin(double a) {
+	return asin(a);
+}
+double Acos(double a) {
+	return acos(a);
+}
+double Atg(double a) {
+	return atan(a);
+}
+double Actg(double a) {
+	return ReciprocalFunction(atan(a));
+}
+double expToThePow(int a) {
+	return exp(a);
+}
+double mod(int a, int b) {
+	return a % b;
+}
+/*int time(0)*/
