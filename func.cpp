@@ -173,6 +173,7 @@ std::string scientificlist() {
 	std::cout << "17.Arctangent" << std::endl;
 	std::cout << "18.Arccotangent" << std::endl;
 	std::cout << "19.ExpToThePowerOf..." << std::endl;
+	std::cout << "20.Remainder"<< std::endl; 
 	return "\n";
 }
 std::string scientificfunc(int func) {
