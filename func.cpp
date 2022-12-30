@@ -131,21 +131,21 @@ string programmerfunc(int func) {
 		bool f;
 		std::cin >> f;
 		std::cout << std::endl << "Result :" << std::endl;
-		std::cout << negation(f) << std::endl;
+		std::cout << Negation(f) << std::endl;
 		break;
 	case 8:
 		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
 		bool f, m;
 		std::cin >> f >> m;
 		std::cout << std::endl << "Result :" << std::endl;
-		std::cout << conjunction(f, m) << std::endl;
+		std::cout << Conjunction(f, m) << std::endl;
 		break;
 	case 9:
 		std::cout << std::endl << "Insert 0 or 1:" << std::endl;
 		bool f, m;
 		std::cin >> f >> m;
 		std::cout << std::endl << "Result :" << std::endl;
-		std::cout << disjunction(f, m) << std::endl;
+		std::cout << Disjunction(f, m) << std::endl;
 		break;
 	default:
 		std::cout << std::endl << "Wrong function!!!" << std::endl;
@@ -159,10 +159,10 @@ std::string scientificlist() {
 	std::cout << "3.ReciprocalFunction" << std::endl;
 	std::cout << "4.Factorial" << std::endl;
 	std::cout << "5.Square" << std::endl;
-	std::cout << "6...ToThePowerOf..." << std::endl;
-	std::cout << "7.TenToThePowerOf..." << std::endl;
-	std::cout << "8.LogarithmToTheBase...Of..." << std::endl;
-	std::cout << "9.NaturalLogarithmOf..." << std::endl;
+	std::cout << "6.AToThePowerOfB" << std::endl;
+	std::cout << "7.TenToThePowerOfB" << std::endl;
+	std::cout << "8.LogarithmToTheBaseOfAOfB" << std::endl;
+	std::cout << "9.NaturalLogarithmOfB" << std::endl;
 	std::cout << "10.TimeAndDate" << std::endl;
 	std::cout << "11.Sinus" << std::endl;
 	std::cout << "12.Cosine" << std::endl;
@@ -173,7 +173,7 @@ std::string scientificlist() {
 	std::cout << "17.Arctangent" << std::endl;
 	std::cout << "18.Arccotangent" << std::endl;
 	std::cout << "19.ExpToThePowerOf..." << std::endl;
-	std::cout << "20.Remainder"<< std::endl; 
+	std::cout << "20.Remainder" << std::endl;
 	return "\n";
 }
 std::string scientificfunc(int func) {
@@ -189,7 +189,7 @@ std::string scientificfunc(int func) {
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
+		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << SquareRoot(b) << std::endl;
 		break;
 	case 3:
@@ -203,42 +203,43 @@ std::string scientificfunc(int func) {
 		int a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << Factoril(a) << std::endl;
+		std::cout << Factorial(a) << std::endl;
 		break;
 	case 5:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
-		std::cout << SquareRoot(b) << std::endl;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << Square(b) << std::endl;
 		break;
 	case 6:
-		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		std::cin >> b;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		std::cin >> b >> a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ReciprocalFunction(b) << std::endl;
+		std::cout << AToThePowerOfB(b,a) << std::endl;
 		break;
 	case 7:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << AbsoluteValue(a) << std::endl;
+		std::cout << TenToThePowerOfB(a) << std::endl;
 		break;
 	case 8:
-		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		double b;
-		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
-		std::cout << SquareRoot(b) << std::endl;
+		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
+		double b, a;
+		std::cin >> b>>a;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << log(a,b) << std::endl;
 		break;
 	case 9:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ReciprocalFunction(b) << std::endl;
+		std::cout << ln(b) << std::endl;
 		break;
 	case 10:
+		/*не доделан*/
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
 		std::cin >> a;
@@ -249,74 +250,68 @@ std::string scientificfunc(int func) {
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
-		std::cout << SquareRoot(b) << std::endl;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << sinus(b) << std::endl;
 		break;
 	case 12:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ReciprocalFunction(b) << std::endl;
+		std::cout << cos(b) << std::endl;
 		break;
 	case 13:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << AbsoluteValue(a) << std::endl;
+		std::cout << Tg(a) << std::endl;
 		break;
 	case 14:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
-		std::cout << SquareRoot(b) << std::endl;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << Ctg(b) << std::endl;
 		break;
 	case 15:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ReciprocalFunction(b) << std::endl;
+		std::cout << Asin(b) << std::endl;
 		break;
 	case 16:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << AbsoluteValue(a) << std::endl;
+		std::cout << Acos(a) << std::endl;
 		break;
 	case 17:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
-		std::cout << SquareRoot(b) << std::endl;
+		std::cout << std::endl << "Result:" << std::endl;
+		std::cout << Atg(b) << std::endl;
 		break;
 	case 18:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ReciprocalFunction(b) << std::endl;
+		std::cout << Actg(b) << std::endl;
 		break;
 	case 19:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << AbsoluteValue(a) << std::endl;
+		std::cout << expToThePow(a) << std::endl;
 		break;
 	case 20:
-		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		double b;
-		std::cin >> b;
-		std::cout << std:endl << "Result:" << std::endl;
-		std::cout << SquareRoot(b) << std::endl;
-		break;
-	case 21:
-		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		std::cin >> b;
+		std::cout << std::endl << "Insert 2 number:" << std::endl;
+		int a, b;
+		std::cin >> a >> b;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ReciprocalFunction(b) << std::endl;
+		std::cout << mod(a,b) << std::endl;
 		break;
 	default:
 		std::cout << endl << "Wrong function!!!" << std::endl;
@@ -340,7 +335,7 @@ std::string calculator() {
 		break;
 	case 3:
 		std::cout << scientificlist();
-		std:cin >> func;
+	std:cin >> func;
 		std::cout << scientificfunc(func);
 		break;
 	default:
