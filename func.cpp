@@ -161,19 +161,18 @@ std::string scientificlist() {
 	std::cout << "5.Square" << std::endl;
 	std::cout << "6.AToThePowerOfB" << std::endl;
 	std::cout << "7.TenToThePowerOfB" << std::endl;
-	std::cout << "8.LogarithmToTheBaseOfAOfB" << std::endl;
-	std::cout << "9.NaturalLogarithmOfB" << std::endl;
-	std::cout << "10.TimeAndDate" << std::endl;
-	std::cout << "11.Sinus" << std::endl;
-	std::cout << "12.Cosine" << std::endl;
-	std::cout << "13.Tangent" << std::endl;
-	std::cout << "14.Cotangent" << std::endl;
-	std::cout << "15.Arcsinus" << std::endl;
-	std::cout << "16.Arccosine" << std::endl;
-	std::cout << "17.Arctangent" << std::endl;
-	std::cout << "18.Arccotangent" << std::endl;
-	std::cout << "19.ExpToThePowerOf..." << std::endl;
-	std::cout << "20.Remainder" << std::endl;
+	std::cout << "8.NaturalLogarithmOfB" << std::endl;
+	std::cout << "9.TimeAndDate" << std::endl;
+	std::cout << "10.Sinus" << std::endl;
+	std::cout << "11.Cosine" << std::endl;
+	std::cout << "12.Tangent" << std::endl;
+	std::cout << "13.Cotangent" << std::endl;
+	std::cout << "14.Arcsinus" << std::endl;
+	std::cout << "15.Arccosine" << std::endl;
+	std::cout << "16.Arctangent" << std::endl;
+	std::cout << "17.Arccotangent" << std::endl;
+	std::cout << "18.ExpToThePowerOf..." << std::endl;
+	std::cout << "19.Remainder" << std::endl;
 	return "\n";
 }
 std::string scientificfunc(int func) {
@@ -194,6 +193,7 @@ std::string scientificfunc(int func) {
 		break;
 	case 3:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << ReciprocalFunction(b) << std::endl;
@@ -213,10 +213,12 @@ std::string scientificfunc(int func) {
 		std::cout << Square(b) << std::endl;
 		break;
 	case 6:
+		double a;
+		int b;
 		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
-		std::cin >> b >> a;
+		std::cin >> a >> b;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << AToThePowerOfB(b,a) << std::endl;
+		std::cout << AToThePowerOfB(a,b) << std::endl;
 		break;
 	case 7:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
@@ -226,19 +228,13 @@ std::string scientificfunc(int func) {
 		std::cout << TenToThePowerOfB(a) << std::endl;
 		break;
 	case 8:
-		std::cout << std::endl << "Insert 2 numbers:" << std::endl;
-		double b, a;
-		std::cin >> b>>a;
+		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double a;
+		std::cin >>a;
 		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << log(a,b) << std::endl;
+		std::cout << ln(a) << std::endl;
 		break;
 	case 9:
-		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		std::cin >> b;
-		std::cout << std::endl << "Result:" << std::endl;
-		std::cout << ln(b) << std::endl;
-		break;
-	case 10:
 		/*не доделан*/
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
@@ -246,67 +242,70 @@ std::string scientificfunc(int func) {
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << AbsoluteValue(a) << std::endl;
 		break;
-	case 11:
+	case 10:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << sinus(b) << std::endl;
 		break;
-	case 12:
+	case 11:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << cos(b) << std::endl;
 		break;
-	case 13:
+	case 12:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		int a;
+		double a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << Tg(a) << std::endl;
 		break;
-	case 14:
+	case 13:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << Ctg(b) << std::endl;
 		break;
-	case 15:
+	case 14:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << Asin(b) << std::endl;
 		break;
-	case 16:
+	case 15:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
-		int a;
+		double a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << Acos(a) << std::endl;
 		break;
-	case 17:
+	case 16:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << Atg(b) << std::endl;
 		break;
-	case 18:
+	case 17:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
+		double b;
 		std::cin >> b;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << Actg(b) << std::endl;
 		break;
-	case 19:
+	case 18:
 		std::cout << std::endl << "Insert 1 number:" << std::endl;
 		int a;
 		std::cin >> a;
 		std::cout << std::endl << "Result:" << std::endl;
 		std::cout << expToThePow(a) << std::endl;
 		break;
-	case 20:
+	case 19:
 		std::cout << std::endl << "Insert 2 number:" << std::endl;
 		int a, b;
 		std::cin >> a >> b;
