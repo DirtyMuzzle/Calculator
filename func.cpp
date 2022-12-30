@@ -157,6 +157,22 @@ std::string scientificlist() {
 	std::cout << "1.AbsoluteValue" << std::endl;
 	std::cout << "2.SquareRoot" << std::endl;
 	std::cout << "3.ReciprocalFunction" << std::endl;
+	std::cout << "4.Factorial" << std::endl;
+	std::cout << "5.Square" << std::endl;
+	std::cout << "6...ToThePowerOf..." << std::endl;
+	std::cout << "7.TenToThePowerOf..." << std::endl;
+	std::cout << "8.LogarithmToTheBase...Of..." << std::endl;
+	std::cout << "9.NaturalLogarithmOf..." << std::endl;
+	std::cout << "10.TimeAndDate" << std::endl;
+	std::cout << "11.Sinus" << std::endl;
+	std::cout << "12.Cosine" << std::endl;
+	std::cout << "13.Tangent" << std::endl;
+	std::cout << "14.Cotangent" << std::endl;
+	std::cout << "15.Arcsinus" << std::endl;
+	std::cout << "16.Arccosine" << std::endl;
+	std::cout << "17.Arctangent" << std::endl;
+	std::cout << "18.Arccotangent" << std::endl;
+	std::cout << "19.ExpToThePowerOf..." << std::endl;
 	return "\n";
 }
 std::string scientificfunc(int func) {
